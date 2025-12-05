@@ -1,1 +1,163 @@
+---
+title: "Stevie Nicks Discography Project"
+Name: "Ryan Lin"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+Loading Libraries
+```{r}
+library(readr)
+library(tidyr)
+library(dplyr)
+library(janitor)
+library(ggplot2)
+library(lubridate)
+library(viridis)
+library(ggrepel)
+```
+Loading and Cleaning Data
+```{r}
+source("../src/sn_discography_data_cleaning.R")
 
+source("../src/sn_discography_functions.R")
+
+album_popularity <- sn_discography_clean %>%
+  group_by(Album, Year) %>%
+  summarise(
+    avg_popularity = mean(Popularity),
+    track_count = n(),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(avg_popularity))
+
+album_summary <- sn_discography_clean %>%
+  group_by(Album, Year) %>%
+  summarise(
+    avg_energy = mean(Energy, na.rm = TRUE),
+    track_count = n(),
+    .groups = "drop"
+  ) %>%
+  arrange(Year)
+
+```
+Visualizations
+```{r}
+## Visualization 1: Average Album Popularity
+
+album_popularity_graph <- ggplot(album_popularity, 
+                                 aes(x = Year, y = avg_popularity)) +
+    geom_line(color = "steelblue", size = 1) +
+    geom_point(color = "steelblue", size = 3) +
+    geom_text_repel(aes(label = Album), 
+                size = 4,
+                color = "darkblue",
+                fontface = "bold",
+                force = 3,             
+                box.padding = 0.5,
+                max.overlaps = 25) +
+  labs(title = "Average Popularity by Album Over Time",
+       x = "Year", 
+       y = "Average Popularity") +
+  theme_minimal()
+
+print(album_popularity_graph)
+ggsave("../results/SN_album_popularity.pdf", plot = album_popularity_graph)
+
+## Visualization 2: Album Energy Over Her Career
+
+all_albums <- unique(sn_discography_clean$Album)
+
+album_results <- data.frame()
+
+for (i in 1:length(all_albums)) {
+  current_album <- all_albums[i]
+  
+  album_songs <- sn_discography_clean[sn_discography_clean$Album == current_album, ]
+  
+  album_energy <- mean(album_songs$Energy)
+  album_year <- album_songs$Year[1]
+  
+  album_label <- make_simple_label(current_album)
+  
+  one_album_result <- data.frame(
+    Album = current_album,
+    Year = album_year,
+    Energy = album_energy,
+    Label = album_label
+  )
+  
+  album_results <- rbind(album_results, one_album_result)
+}
+
+overall_average_energy <- mean(album_results$Energy)
+
+for (j in 1:nrow(album_results)) {
+  current_energy <- album_results$Energy[j]
+  
+  above_avg <- is_above_average(current_energy, overall_average_energy)
+  
+  if (above_avg == TRUE) {
+    album_results$Category[j] <- "Above Average"
+    album_results$Difference[j] <- current_energy - overall_average_energy
+  } else {
+    album_results$Category[j] <- "Below Average" 
+    album_results$Difference[j] <- current_energy - overall_average_energy
+  }
+  
+  if (abs(album_results$Difference[j]) > 0.1) {
+    album_results$Intensity[j] <- "High Difference"
+  } else {
+    album_results$Intensity[j] <- "Small Difference"
+  }
+}
+
+energy_comparison_plot <- ggplot(album_results, aes(x = Year, y = Energy)) +
+  geom_hline(yintercept = overall_average_energy, 
+             color = "red", size = 1, linetype = "dashed",
+             alpha = 0.7) +
+  geom_point(aes(color = Difference), size = 5, alpha = 0.8) +
+  geom_text_repel(aes(label = Label), 
+                size = 4,
+                color = "darkblue",
+                fontface= "bold",
+                force = 3,             
+                box.padding = 0.5,
+                max.overlaps = 25) +
+  scale_color_viridis_c(name = "Difference from\nAverage Energy",
+                        option = "plasma") +
+  labs(title = "Stevie Nicks Album Energy Comparison",
+       subtitle = paste("Red line shows overall average energy (", 
+                        round(overall_average_energy, 3), ")"),
+       x = "Year", 
+       y = "Album Energy",
+       caption = "Purple = Below average | Yellow = Above average") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 11),
+    legend.position = "right"
+  )
+
+print(energy_comparison_plot)
+
+ggsave("../results/SN_album_energy_comparison.pdf", plot = energy_comparison_plot)
+```
+References
+
+* https://stackoverflow.com/questions/71591572/convert-time-string-to-numeric-in-r
+
+* https://ggrepel.slowkow.com/articles/examples
+
+* https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
+
+* A Google search as to whether I should use an R Script or R Markdown file for my source code.
+
+Generative AI Reflection
+
+* ChatGPT was used to help determine what kinds of visualizations would be the most interesting to generate, and also helped with determining how to create a and format some of the for loops. https://chatgpt.com/share/691e295e-2560-8011-a50f-e315b1dd9c5c
+
+* I also used AI to see if my code was redundant and/or had any errors that would affect how the visualizations would look upon creation. https://chatgpt.com/share/691e2aa0-49c8-8011-922e-43402a1493ba
+
+* Its largest use however, was to help me with the filesystem organization, so everything would load and save to the correct places. https://chatgpt.com/share/691e2c2b-ab28-8011-8783-b25f595edc68

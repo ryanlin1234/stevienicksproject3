@@ -20,9 +20,8 @@ The main outputs are two visualizations:
 
 The project is organized as follows:
 
-- `Stevie Nicks Discography/`
-  - `Stevie Nicks Discography.Rproj` — RStudio project file.
-  - `README.md` — this file.
+- `Stevie Nicks Discography.Rproj` — RStudio project file.
+- `README.md` — this file.
 
 - `data/`
   - `StevieNicksAlbumTracks.csv` — raw track-level data for Stevie Nicks’s solo albums.

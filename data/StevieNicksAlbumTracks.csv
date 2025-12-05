@@ -1,1 +1,96 @@
-StevieNicksAlbumTracks.csv
+Track,Album,Year,Duration,Time_Signature,Danceability,Energy,Key,Mode,Tempo,Popularity
+The Highwayman,Bella Donna,1981,4:50,4,0.254,0.355,A,Major,176.459,32
+Think About It,Bella Donna,1981,3:36,4,0.601,0.837,C,Major,118.556,35
+How Still My Love,Bella Donna,1981,3:55,4,0.634,0.649,A,Minor,119.434,38
+Kind of Woman,Bella Donna,1981,3:12,3,0.531,0.45,A#,Minor,107.946,43
+After the Glitter Fades,Bella Donna,1981,3:30,4,0.553,0.569,A,Major,138.344,43
+Outside the Rain,Bella Donna,1981,4:19,4,0.657,0.668,C,Major,116.743,44
+Bella Donna,Bella Donna,1981,5:22,4,0.527,0.624,A#,Major,110.864,49
+Leather and Lace,Bella Donna,1981,3:45,4,0.49,0.432,D#,Major,153.753,57
+Stop Draggin' My Heart Around (with Tom Petty and The Heartbreakers),Bella Donna,1981,4:04,4,0.631,0.597,E,Minor,107.26,62
+Edge of Seventeen,Bella Donna,1981,5:29,4,0.591,0.804,C,Major,111.457,71
+Gate and Garden,The Wild Heart,1983,4:06,4,0.631,0.671,F,Major,124.184,22
+Nothing Ever Changes,The Wild Heart,1983,4:09,4,0.676,0.837,G,Minor,114.606,24
+Beauty and the Beast,The Wild Heart,1983,6:04,3,0.22,0.199,D#,Minor,131.788,25
+Enchanted,The Wild Heart,1983,3:06,4,0.593,0.827,A,Major,140.335,35
+Wild Heart,The Wild Heart,1983,6:09,4,0.61,0.539,F,Major,121.291,36
+Sable on Blond,The Wild Heart,1983,4:15,4,0.596,0.608,G#,Minor,124.069,36
+Stand Back,The Wild Heart,1983,4:51,4,0.684,0.848,B,Minor,116.027,37
+If Anyone Falls,The Wild Heart,1983,4:09,4,0.559,0.746,C,Major,96.289,39
+Nightbird,The Wild Heart,1983,5:01,4,0.663,0.511,C,Major,125.22,39
+I Will Run to You,The Wild Heart,1983,3:21,4,0.549,0.514,E,Minor,95.965,42
+The Nightmare,Rock a Little,1985,5:23,4,0.618,0.847,A,Minor,122.664,23
+No Spoken Word,Rock a Little,1985,4:14,4,0.632,0.624,A,Minor,130.873,25
+Some Become Strangers,Rock a Little,1985,3:28,4,0.747,0.525,B,Minor,125.616,27
+Rock a Little (Go Ahead Lily),Rock a Little,1985,3:37,4,0.615,0.449,A,Minor,75.502,29
+Imperial Hotel,Rock a Little,1985,2:52,4,0.628,0.755,E,Minor,117.518,30
+If I Were You,Rock a Little,1985,4:11,4,0.534,0.89,D,Major,140.383,34
+I Sing for Things,Rock a Little,1985,3:44,4,0.554,0.398,C,Major,110.432,36
+Sister Honey,Rock a Little,1985,3:50,4,0.71,0.63,C,Major,119.097,37
+Has Anyone Ever Written Anything for You,Rock a Little,1985,4:39,4,0.529,0.149,F,Major,86.921,43
+I Can't Wait,Rock a Little,1985,4:35,4,0.61,0.931,A,Minor,125.399,44
+Talk to Me,Rock a Little,1985,4:10,4,0.643,0.712,F,Major,103.07,51
+Juliet,The Other Side of the Mirror,1989,4:51,4,0.683,0.813,F,Major,105.967,21
+Fire Burning,The Other Side of the Mirror,1989,3:16,4,0.673,0.874,A,Major,125.998,23
+Cry Wolf,The Other Side of the Mirror,1989,4:09,4,0.536,0.56,F,Major,73.952,23
+Doing the Best That I Can (Escape from Berlin),The Other Side of the Mirror,1989,5:36,4,0.423,0.621,A#,Minor,179.669,23
+I Still Miss Someone (Blue Eyes),The Other Side of the Mirror,1989,4:08,4,0.695,0.461,C,Major,108.943,23
+Alice,The Other Side of the Mirror,1989,5:47,4,0.564,0.501,F,Major,94.066,24
+Ghosts,The Other Side of the Mirror,1989,4:54,4,0.556,0.55,E,Major,97.972,26
+Two Kinds of Love,The Other Side of the Mirror,1989,4:46,4,0.63,0.56,G,Major,103.902,27
+Long Way to Go,The Other Side of the Mirror,1989,4:07,4,0.618,0.927,D#,Minor,132.025,28
+Ooh My Love,The Other Side of the Mirror,1989,5:03,4,0.688,0.764,G#,Major,97.978,28
+Whole Lotta Trouble,The Other Side of the Mirror,1989,4:31,4,0.44,0.931,A,Major,191.329,28
+Rooms on Fire,The Other Side of the Mirror,1989,4:34,4,0.616,0.92,A,Minor,126.941,56
+Docklands,Street Angel,1994,4:48,4,0.673,0.678,F,Minor,118.284,15
+Destiny,Street Angel,1994,5:01,4,0.381,0.553,G,Major,181.991,15
+Love Is Like a River,Street Angel,1994,4:44,4,0.625,0.761,G#,Major,132.641,15
+Listen to the Rain,Street Angel,1994,4:33,4,0.6,0.775,G,Major,123.141,16
+Just Like a Woman,Street Angel,1994,3:51,4,0.607,0.682,G,Major,88.109,16
+Kick It,Street Angel,1994,4:25,4,0.491,0.754,A,Major,173.996,16
+Greta,Street Angel,1994,4:21,4,0.756,0.663,C,Major,121.302,18
+Street Angel,Street Angel,1994,4:10,4,0.452,0.4,A#,Minor,175.716,18
+Rose Garden,Street Angel,1994,4:29,4,0.624,0.557,G,Major,81.999,19
+Unconditional Love,Street Angel,1994,3:22,4,0.644,0.701,C,Major,104.092,27
+Maybe Love Will Change Your Mind,Street Angel,1994,4:19,4,0.653,0.888,C,Major,121.358,27
+Blue Denim,Street Angel,1994,4:23,4,0.592,0.852,C,Minor,127.429,45
+That Made Me Stronger,Trouble in Shangri-La,2001,4:19,4,0.535,0.953,G,Major,92.325,19
+It's Only Love,Trouble in Shangri-La,2001,3:32,4,0.575,0.299,C#,Minor,137.647,19
+Love Changes,Trouble in Shangri-La,2001,4:23,4,0.772,0.666,C,Major,107.725,19
+Bombay Sapphires,Trouble in Shangri-La,2001,4:05,4,0.516,0.798,F,Minor,99.573,21
+Love Is,Trouble in Shangri-La,2001,4:31,4,0.575,0.438,B,Minor,127.496,22
+Candlebright,Trouble in Shangri-La,2001,4:41,4,0.613,0.758,D#,Major,92.619,23
+Too Far from Texas,Trouble in Shangri-La,2001,3:48,4,0.416,0.746,C#,Major,185.727,23
+I Miss You,Trouble in Shangri-La,2001,4:15,4,0.547,0.722,E,Minor,84.597,23
+Every Day,Trouble in Shangri-La,2001,3:36,4,0.483,0.829,E,Major,96.613,32
+Trouble in Shangri-La,Trouble in Shangri-La,2001,4:49,4,0.592,0.852,E,Minor,102.14,34
+Fall from Grace,Trouble in Shangri-La,2001,4:31,4,0.414,0.977,G,Major,174.602,34
+Planets of the Universe,Trouble in Shangri-La,2001,4:45,4,0.544,0.937,G,Minor,104.417,38
+Sorcerer,Trouble in Shangri-La,2001,4:54,4,0.583,0.875,A,Minor,125.802,39
+Ghosts Are Gone,In Your Dreams,2011,6:06,4,0.474,0.94,D,Major,130.964,16
+Cheaper Than Free (feat. Dave Stewart),In Your Dreams,2011,3:38,4,0.483,0.449,A,Major,81.441,16
+Wide Sargasso Sea,In Your Dreams,2011,5:36,4,0.525,0.8,G,Minor,95.315,17
+Everybody Loves You,In Your Dreams,2011,5:16,4,0.605,0.629,C,Major,90.001,18
+You May Be the One,In Your Dreams,2011,5:26,3,0.321,0.608,G,Major,187.051,18
+In Your Dreams,In Your Dreams,2011,3:58,4,0.383,0.961,A,Major,171.748,20
+Italian Summer,In Your Dreams,2011,4:38,3,0.182,0.613,D#,Minor,206.296,20
+Annabel Lee,In Your Dreams,2011,5:58,4,0.573,0.837,F,Major,112.509,24
+Moonlight (A Vampire's Dream),In Your Dreams,2011,5:26,4,0.585,0.701,C,Major,105.977,29
+New Orleans,In Your Dreams,2011,5:34,4,0.529,0.466,C,Major,84.98,30
+For What It's Worth,In Your Dreams,2011,4:32,4,0.563,0.526,D,Major,95.926,34
+Soldier's Angel,In Your Dreams,2011,5:16,4,0.475,0.456,G,Minor,129.555,34
+Secret Love,In Your Dreams,2011,3:15,4,0.639,0.775,A#,Major,99.975,38
+I Don't Care,24 Karat Gold: Songs from the Vault,2014,6:09,4,0.425,0.814,G,Major,134.913,7
+Cathouse Blues,24 Karat Gold: Songs from the Vault,2014,2:48,4,0.602,0.497,B,Major,104.386,8
+If You Were My Love,24 Karat Gold: Songs from the Vault,2014,5:00,4,0.505,0.501,D,Minor,94.886,8
+All the Beautiful Worlds,24 Karat Gold: Songs from the Vault,2014,5:01,4,0.593,0.669,A,Minor,98.619,9
+Belle Fleur,24 Karat Gold: Songs from the Vault,2014,5:37,4,0.596,0.843,D#,Major,120.037,9
+Carousel,24 Karat Gold: Songs from the Vault,2014,3:19,4,0.589,0.529,F#,Major,117.118,9
+Hard Advice,24 Karat Gold: Songs from the Vault,2014,4:20,4,0.359,0.606,A#,Major,173.784,10
+She Loves Him Still,24 Karat Gold: Songs from the Vault,2014,4:29,4,0.528,0.324,G,Major,82.138,11
+Mabel Normand,24 Karat Gold: Songs from the Vault,2014,4:53,4,0.621,0.85,A#,Minor,110.018,12
+Blue Water,24 Karat Gold: Songs from the Vault,2014,4:26,4,0.446,0.602,C,Major,183.878,12
+24 Karat Gold,24 Karat Gold: Songs from the Vault,2014,4:09,4,0.69,0.714,A,Minor,123.015,15
+Lady,24 Karat Gold: Songs from the Vault,2014,4:57,4,0.33,0.363,D#,Major,83.387,16
+Starshine,24 Karat Gold: Songs from the Vault,2014,4:05,4,0.567,0.973,A#,Major,137.995,17
+The Dealer,24 Karat Gold: Songs from the Vault,2014,4:38,4,0.704,0.78,F,Major,121.939,35
